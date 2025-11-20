@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <title>Student Grade Calculator</title>
+
+    <style>
+      .container {
+     background: #fff5f5;
+     border-radius: 12px;
+     width: 50%;
+     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    
+    }
+    .theattedance {
+     background: #fff5f5;
+     border-radius: 12px;
+     width: 50%;
+     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    
+    }
+    .theassesments {
+     background: #fff5f5;
+     border-radius: 12px;
+     width: 50%;
+     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+     align-items: center;
+    
+    }
+</style>
+
+</head>
+<body>
+    <center>
+    <div class="container">
+
+    <div class="thestudent">
+    <h1>Student Attendance and Performance</h1>
+
+    <br>
+    <div class="mb-3">
+    <p>First Name:</p>
+    <input type="text" id="first_name" placeholder="Enter your first name">
+    </div>
+
+    <div class="md-3">
+      <p>Last Name:</p>
+      <input type="text" id="last_name" placeholder="Enter your last name">
+    </div>
+
+    <div class="md-3">
+      <p>Student ID No.:</p>
+      <input type="text" id="id_num" placeholder="Enter your ID number">
+    </div>
+    </div>
+
+    <br><br>
+
+    <div class="theattendance">
+
+    <div class="md-3">
+      <p>Total School Days:</p>
+      <input type="number" id="daysnum" placeholder="Amount of School days">
+    </div>
+
+    <div class="md-3">
+      <p>Days present:</p>
+      <input type="number" id="absentnum" placeholder="Amount of Days Present">
+    </div>
+    </div>
+    </div>
+
+    <br><br>
+
+    <div class="theassesments">
+    <div class="md-3">
+      <p>Drill 1:</p>
+      <input type="number" id="dr_1" placeholder="Enter scorer">
+    </div>
+
+    <div class="md-3">
+      <p>Drill 2:</p>
+      <input type="number" id="dr_2" placeholder="Enter score">
+    </div>
+
+    <div class="md-3">
+      <p>Seatwork 1:</p>
+      <input type="number" id="sw_1" placeholder="Enter score">
+    </div>
+
+    <div class="md-3">
+      <p>Seatwork 2:</p>
+      <input type="number" id="sw_2" placeholder="Enter score">
+    </div>
+
+    <div class="md-3">
+      <p>Skills Test:</p>
+      <input type="number" id="sk_test" placeholder="Enter score">
+    </div>
+
+    </div>
+
+    <br><br>
+
+    <div id="student_info"></div>
+    <div id="summary"></div>
+    <div id="output"></div>
+
+    <button py-click="general_weighted_average">Calculate</button>
+
+    <script type="py" src="main.py"></script>
+    </center>
+</div>
+</div>
+
+</body>
+</html>
